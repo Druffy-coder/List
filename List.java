@@ -29,6 +29,10 @@ public class List {
             this.next = next;
         }
 
+        public String toString() {
+            return Long.toString(this.value);
+        }
+
 
 
     }
