@@ -36,6 +36,11 @@ public class List {
         private item begin;
         private long counter;
 
+        public List() {
+            this.begin = null;
+            this.counter = 0;
+        }
+
 
 
     }
