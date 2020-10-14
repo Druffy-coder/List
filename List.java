@@ -130,7 +130,27 @@ public class List {
         }
 
 
+        public void sort() {
+        int min = 2147483647;
+        int minPos = 0;
+        item iter;
+        for (int i = 0; i < this.counter; ++i) {
+            iter = indexAt(i);
+            for (int j = i; j < this.counter; ++j) {
+                if(iter != null ) {
+                    int get = iter.getValue();
+                    if (get <= min) {
+                        minPos = j;
+                        min = get;
+                    }
+                    iter = iter.getNext();
 
+                }
+            }
+            swap(i, minPos);
+            min = 2147483647;
+
+        }
     }
 
 }
