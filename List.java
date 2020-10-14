@@ -51,6 +51,16 @@ public class List {
             this.counter++;
         }
 
+        public item end() {
+            if (this.begin == null)
+                return null;
+            item iter = this.begin;
+            while (iter.hasNext()) {
+                iter = iter.getNext();
+            }
+            return iter;
+        }
+
 
 
     }
