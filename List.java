@@ -10,9 +10,16 @@ public class List {
             this.value = value;
             this.next = null;
         }
+        public boolean hasNext() {
+            if (this.next != null) {
+                return true;
+            } else {
+                return false;
+            }
+        }
 
 
-        
+
     }
 
 }
