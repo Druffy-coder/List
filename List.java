@@ -18,6 +18,17 @@ public class List {
             }
         }
 
+        public int getValue() { return value; }
+
+
+        public item getNext() {
+            return next;
+        }
+
+        public void setNext(item next) {
+            this.next = next;
+        }
+
 
 
     }
