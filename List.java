@@ -41,6 +41,16 @@ public class List {
             this.counter = 0;
         }
 
+        public void add(int value) {
+            item item = new item(value);
+            if (this.begin == null)
+                this.begin = item;
+            else {
+                end().setNext(item);
+            }
+            this.counter++;
+        }
+
 
 
     }
