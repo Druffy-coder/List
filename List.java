@@ -33,6 +33,9 @@ public class List {
             return Long.toString(this.value);
         }
 
+        private item begin;
+        private long counter;
+
 
 
     }
