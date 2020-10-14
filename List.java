@@ -117,6 +117,18 @@ public class List {
             }
         }
 
+        public item indexAt(int index) {
+
+            if ((index <= this.counter - 1 ) && (index >=0)) {
+                item iter = this.begin;
+                for (int i=0; i <index; ++i)
+                    iter = iter.getNext();
+                return iter;
+            }
+            return null;
+
+        }
+
 
 
     }
